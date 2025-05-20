@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function DefaultHeader() {
   return (
-    <Header variant="default">
+    <Header>
       <nav className="hidden md:flex gap-6">
         <Link
           href="/" 

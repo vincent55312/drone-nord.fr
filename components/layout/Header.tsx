@@ -5,11 +5,10 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
 interface HeaderProps {
-  variant: 'landing' | 'default';
   children?: React.ReactNode;
 }
 
-export default function Header({ variant }: HeaderProps) {
+export default function Header({ children }: HeaderProps) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   
@@ -58,19 +57,21 @@ export default function Header({ variant }: HeaderProps) {
         </Link>
         
         <nav className="hidden md:flex items-center">
-          <ul className="flex space-x-6">
-            {navLinks.map((link) => (
-              <li key={link.name}>
-                <Link 
-                  href={link.href}
-                  className="group relative font-medium text-[var(--polynesian-blue)] hover:text-[var(--pumpkin)] transition-colors"
-                >
-                  {link.name}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[var(--pumpkin)] transition-all duration-300 group-hover:w-full"></span>
-                </Link>
-              </li>
-            ))}
-          </ul>
+          {children || (
+            <ul className="flex space-x-6">
+              {navLinks.map((link) => (
+                <li key={link.name}>
+                  <Link 
+                    href={link.href}
+                    className="group relative font-medium text-[var(--polynesian-blue)] hover:text-[var(--pumpkin)] transition-colors"
+                  >
+                    {link.name}
+                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[var(--pumpkin)] transition-all duration-300 group-hover:w-full"></span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          )}
         </nav>
         
         <div className="flex items-center gap-4">

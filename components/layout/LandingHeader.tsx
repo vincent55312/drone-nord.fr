@@ -2,7 +2,7 @@ import Header from './Header';
 
 export default function LandingHeader() {
   return (
-    <Header variant="landing">
+    <Header>
       <nav className="hidden md:flex gap-6">
         <a 
           href="#services" 
