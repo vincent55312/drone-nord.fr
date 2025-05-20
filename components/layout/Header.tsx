@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react';
 
 interface HeaderProps {
   variant: 'landing' | 'default';
+  children?: React.ReactNode;
 }
 
 export default function Header({ variant }: HeaderProps) {
@@ -30,15 +31,11 @@ export default function Header({ variant }: HeaderProps) {
 
   return (
     <header 
-      className={`fixed top-0 left-0 right-0 z-50 py-1 px-5 transition-all duration-300 ${
-        variant === 'default' 
-          ? 'bg-[var(--theme-bg)] shadow-md'
-          : 'bg-[var(--theme-bg)]/95 backdrop-blur-md'
+      className={`fixed top-0 left-0 right-0 z-50 py-1 px-5 transition-all duration-300 bg-[var(--theme-bg)] ${
+        scrolled ? 'shadow-md' : ''
       } border-b-1 border-[var(--polynesian-blue)]`}
       style={{
-        backgroundColor: variant === 'default' 
-          ? 'var(--theme-bg)' 
-          : 'rgba(var(--rgb-theme-bg, 235, 235, 235), 0.95)',
+        backgroundColor: 'var(--antiflash-white)',
       }}
     >
       <div className="container mx-auto flex justify-between items-center">

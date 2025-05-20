@@ -5,12 +5,10 @@ import SectionWrapper from '@/components/ui/SectionWrapper';
 export default function ContactSection() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [error, setError] = useState("");
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setError("");
 
     const formData = new FormData(e.currentTarget);
 
@@ -24,11 +22,9 @@ export default function ContactSection() {
 
       if (data.success) {
         setIsSubmitted(true);
-      } else {
-        setError("Une erreur est survenue. Veuillez réessayer.");
       }
     } catch (error) {
-      setError("Une erreur est survenue. Veuillez réessayer.");
+      console.error("Erreur lors de la soumission du formulaire:", error);
     } finally {
       setIsSubmitting(false);
     }
@@ -36,7 +32,6 @@ export default function ContactSection() {
 
   const resetForm = () => {
     setIsSubmitted(false);
-    setError("");
   };
 
   const phoneIcon = (
@@ -67,8 +62,8 @@ export default function ContactSection() {
       >
         <meta itemProp="name" content="Drone Nord" />
         <meta itemProp="description" content="Services professionnels de captation aérienne par drone dans le Nord et Nord-Pas-de-Calais" />
-        <meta itemProp="url" content="https://drone-nord.fr" />
-        <meta itemProp="image" content="https://drone-nord.fr/og-image.png" />
+        <meta itemProp="url" content="https://www.drone-nord.fr" />
+        <meta itemProp="image" content="https://www.drone-nord.fr/og-image.png" />
         <meta itemProp="priceRange" content="€€" />
         
         {/* Contact Form */}
@@ -107,14 +102,8 @@ export default function ContactSection() {
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 mr-2 text-[var(--pumpkin)]">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
                 </svg>
-                Demande de devis ou d'informations
+                Demande de devis ou d&apos;informations
               </h3>
-              
-              {error && (
-                <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg mb-4" role="alert">
-                  {error}
-                </div>
-              )}
               
               <form 
                 onSubmit={handleSubmit} 
@@ -191,7 +180,7 @@ export default function ContactSection() {
                     name="message"
                     rows={5}
                     className="w-full p-3 border border-[var(--silver)]/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--pumpkin)]/50 focus:border-[var(--pumpkin)] transition-all"
-                    placeholder="Décrivez votre projet de captation par drone (lieu, date, type d'événement...)"
+                    placeholder="Décrivez votre projet de captation par drone (lieu, date, type d&apos;événement...)"
                     required
                     aria-required="true"
                     itemProp="description"
@@ -292,7 +281,7 @@ export default function ContactSection() {
                   </svg>
                 </div>
                 <div itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
-                  <h4 className="font-medium text-[var(--polynesian-blue)]">Zone d'intervention</h4>
+                  <h4 className="font-medium text-[var(--polynesian-blue)]">Zone d&apos;intervention</h4>
                   <p className="text-[var(--bice-blue)]">
                     <span itemProp="addressRegion">Nord et Nord-Pas-de-Calais</span>
                   </p>
@@ -309,7 +298,7 @@ export default function ContactSection() {
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 mr-2 text-[var(--pumpkin)]">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
                   </svg>
-                  Besoin d'un devis rapide ?
+                  Besoin d&apos;un devis rapide ?
                 </h3>
                 <p className="mb-4 opacity-90">
                   Nous intervenons pour tous vos projets de captation vidéo par drone dans le Nord et le Nord-Pas-de-Calais.

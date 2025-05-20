@@ -4,7 +4,6 @@ import React, { useState, useEffect } from 'react';
 import SectionWrapper from '@/components/ui/SectionWrapper';
 import { departmentGeoJSON } from '@/data/MapData';
 import dynamic from 'next/dynamic';
-import type { FeatureCollection, Feature, Geometry } from 'geojson';
 
 // Composant de carte chargé dynamiquement côté client uniquement
 const MapComponent = dynamic(() => import('./map/MapComponent'), { 
@@ -69,7 +68,7 @@ export default function ZoneSection() {
       flipDivider={true}
     >
       <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[var(--polynesian-blue)]">Notre zone d'intervention drone</h2>
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[var(--polynesian-blue)]">Notre zone d&apos;intervention drone</h2>
         <p className="text-lg max-w-3xl mx-auto text-[var(--bice-blue)]">
           Nous proposons nos <strong>services de captation aérienne par drone professionnel</strong> dans le <strong>Nord</strong>, le <strong>Pas-de-Calais</strong>, la <strong>Somme</strong> et la <strong>Seine-Maritime</strong>. Découvrez les principales villes où nous intervenons pour vos projets de vidéo et photo aérienne.
         </p>
@@ -93,7 +92,7 @@ export default function ZoneSection() {
               <h3 className="text-xl font-bold mb-1">
                 {selectedDept 
                   ? `Département ${departments.find(d => d.id === selectedDept)?.name}`
-                  : "Notre zone d'intervention drone dans le Nord de la France"}
+                  : "Notre zone d&apos;intervention drone dans le Nord de la France"}
               </h3>
               <p className="text-sm">
                 {selectedDept 
@@ -110,7 +109,7 @@ export default function ZoneSection() {
           itemScope 
           itemType="https://schema.org/Place"
         >
-          <meta itemProp="name" content="Zone d'intervention Drone Nord" />
+          <meta itemProp="name" content="Zone d&apos;intervention Drone Nord" />
           
           {departments.map((dept) => (
             <div 
@@ -169,7 +168,7 @@ export default function ZoneSection() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
             </svg>
             <p className="text-sm sm:text-base text-[var(--bice-blue)]">
-              Vous ne trouvez pas votre ville dans notre zone d'intervention ? <a href="#contact" className="text-[var(--pumpkin)] font-medium hover:underline">Contactez-nous</a> pour vérifier notre disponibilité dans votre secteur pour vos projets de captation aérienne par drone !
+              Vous ne trouvez pas votre ville dans notre zone d&apos;intervention ? <a href="#contact" className="text-[var(--pumpkin)] font-medium hover:underline">Contactez-nous</a> pour vérifier notre disponibilité dans votre secteur pour vos projets de captation aérienne par drone !
             </p>
           </div>
         </div>

@@ -14,7 +14,7 @@ export default function LandingHeader() {
           href="#zone" 
           className="text-[#0a0f1c] hover:text-opacity-80 transition-colors"
         >
-          Zone d'intervention
+          Zone d&apos;intervention
         </a>
         <a 
           href="#contact" 

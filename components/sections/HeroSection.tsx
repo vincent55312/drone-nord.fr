@@ -28,7 +28,7 @@ export default function HeroSection() {
       clearInterval(tagInterval);
       clearInterval(imageInterval);
     };
-  }, []);
+  }, [serviceTags.length, totalImages]);
 
   return (
     <section 

@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
-import DefaultHeader from "@/components/layout/DefaultHeader";
-import Footer from "@/components/layout/Footer";
 // Ces packages doivent être installés avant utilisation
 // import { Analytics } from '@vercel/analytics/react';
 // import { CookiesProvider } from 'react-cookie';
@@ -20,9 +18,9 @@ export const metadata: Metadata = {
   authors: [{ name: 'Drone Nord' }],
   creator: 'Drone Nord',
   publisher: 'Drone Nord',
-  metadataBase: new URL("https://drone-nord.fr"),
+  metadataBase: new URL("https://www.drone-nord.fr"),
   alternates: {
-    canonical: 'https://drone-nord.fr'
+    canonical: 'https://www.drone-nord.fr'
   },
   robots: {
     index: true,
@@ -31,13 +29,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'fr_FR',
-    url: 'https://drone-nord.fr',
+    url: 'https://www.drone-nord.fr',
     siteName: 'Drone Nord',
     title: 'Drone Nord | Vidéos aériennes professionnelles par drone dans le Nord',
     description: 'Services de prise de vue aérienne par drone dans le Nord et Nord-Pas-de-Calais. Vidéos 4K Ultra HD et montages professionnels pour tous vos projets.',
     images: [
       {
-        url: 'https://drone-nord.fr/og-image.png',
+        url: 'https://www.drone-nord.fr/og-image.png',
         width: 1200,
         height: 630,
         alt: 'Drone Nord - Captation vidéo aérienne professionnelle par drone dans le Nord et Nord-Pas-de-Calais'
@@ -48,7 +46,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Drone Nord | Vidéos aériennes professionnelles par drone dans le Nord',
     description: 'Services de prise de vue aérienne par drone dans le Nord et Nord-Pas-de-Calais. Vidéos 4K Ultra HD pour mariages, immobilier et entreprises.',
-    images: ['https://drone-nord.fr/og-image.png'],
+    images: ['https://www.drone-nord.fr/og-image.png'],
     creator: '@dronenord'
   },
 };
@@ -61,7 +59,22 @@ export default function RootLayout({
   return (
     <html lang="fr" className="scroll-smooth">
       <head>
-        <link rel="canonical" href="https://drone-nord.fr" />
+        <link rel="canonical" href="https://www.drone-nord.fr" />
+        <meta name="twitter:title" content="Drone Nord | Service de vidéo et photo par drone dans le Nord" />
+        <meta name="twitter:description" content="Captations aériennes professionnelles par drone dans le Nord et Pas-de-Calais. Vidéos, photos, visites virtuelles et inspections techniques pour particuliers et professionnels." />
+        <meta name="twitter:image" content="https://www.drone-nord.fr/og-image.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        
+        {/* Service regions */}
+        <meta name="geo.region" content="FR-59" />
+        <meta name="geo.region" content="FR-62" />
+        <meta name="geo.placename" content="Lille, Dunkerque, Valenciennes, Arras, Lens, Béthune" />
+        <meta name="geo.position" content="50.6333;3.0667" />
+        <meta name="ICBM" content="50.6333, 3.0667" />
+
+        {/* Méta pour le référencement local */}
+        <meta name="description" content="Service professionnel de captation par drone dans le Nord et Pas-de-Calais. Vidéos, photos et prises de vue aériennes par pilotes certifiés. Contactez-nous pour un devis gratuit." />
+        <meta name="keywords" content="drone, captation aérienne, vidéo par drone, photo drone, Nord, Pas-de-Calais, Lille, Dunkerque, Valenciennes, pilote drone, prise de vue aérienne" />
       </head>
       {/* <CookiesProvider> */}
         <body className={`${roboto.variable} font-sans antialiased bg-white text-[#0a0f1c]`}>
@@ -76,14 +89,15 @@ export default function RootLayout({
                 "@context": "https://schema.org",
                 "@type": "LocalBusiness",
                 "name": "Drone Nord",
-                "image": "https://drone-nord.fr/og-image.png",
-                "description": "Service professionnel de captation vidéo et photo aérienne par drone dans le Nord et Nord-Pas-de-Calais. Vidéos 4K Ultra HD et montages professionnels.",
-                "url": "https://drone-nord.fr",
-                "telephone": "+33600000000",
-                "email": "contact@drone-nord.fr",
+                "image": "https://www.drone-nord.fr/og-image.png",
+                "url": "https://www.drone-nord.fr",
+                "telephone": "+33700000000",
                 "address": {
                   "@type": "PostalAddress",
-                  "addressRegion": "Nord et Nord-Pas-de-Calais",
+                  "streetAddress": "1 rue du Drone",
+                  "addressLocality": "Lille",
+                  "postalCode": "59000",
+                  "addressRegion": "Nord",
                   "addressCountry": "FR"
                 },
                 "geo": {
@@ -91,34 +105,22 @@ export default function RootLayout({
                   "latitude": 50.6333,
                   "longitude": 3.0667
                 },
-                "priceRange": "€€",
-                "serviceArea": {
-                  "@type": "GeoCircle",
-                  "geoMidpoint": {
-                    "@type": "GeoCoordinates",
-                    "latitude": 50.6333,
-                    "longitude": 3.0667
-                  },
-                  "geoRadius": "100000"
-                },
-                "sameAs": [
-                  "https://www.facebook.com/dronenord",
-                  "https://www.instagram.com/drone_nord"
+                "openingHoursSpecification": [
+                  {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                      "Monday",
+                      "Tuesday",
+                      "Wednesday",
+                      "Thursday",
+                      "Friday"
+                    ],
+                    "opens": "09:00",
+                    "closes": "18:00"
+                  }
                 ],
-                "openingHoursSpecification": {
-                  "@type": "OpeningHoursSpecification",
-                  "dayOfWeek": [
-                    "Monday",
-                    "Tuesday",
-                    "Wednesday",
-                    "Thursday",
-                    "Friday",
-                    "Saturday",
-                    "Sunday"
-                  ],
-                  "opens": "08:00",
-                  "closes": "20:00"
-                }
+                "priceRange": "€€",
+                "description": "Services professionnels de captation aérienne par drone dans le Nord et Nord-Pas-de-Calais"
               })
             }}
           />
