@@ -14,14 +14,16 @@ export async function generateStaticParams() {
 
 // Génération dynamique des métadonnées pour le SEO
 export async function generateMetadata({ params }: { params: { slug: string } }) {
-  const slug = params.slug;
+  // Ces paramètres doivent être attendus avant d'être utilisés selon la documentation Next.js
+  const paramValues = await Promise.resolve(params);
+  const slug = paramValues.slug;
   
   const service = services.find((service) => service.slug === slug);
   
   if (!service) {
     return {
       title: 'Service non trouvé | Drone Nord',
-      description: 'Ce service n\'existe pas.',
+      description: 'Ce service n&apos;existe pas.',
     };
   }
   
@@ -56,7 +58,9 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 }
 
 export default async function ServicePage({ params }: { params: { slug: string } }) {
-  const slug = params.slug;
+  // Ces paramètres doivent être attendus avant d'être utilisés selon la documentation Next.js
+  const paramValues = await Promise.resolve(params);
+  const slug = paramValues.slug;
   
   const service = services.find((service) => service.slug === slug);
   

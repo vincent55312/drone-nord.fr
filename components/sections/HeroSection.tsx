@@ -51,7 +51,7 @@ export default function HeroSection() {
         <div className="flex flex-col lg:flex-row items-center justify-between w-full">
           {/* Text Content */}
           <div className="w-full lg:w-1/2 text-[var(--antiflash-white)] z-10 text-center lg:text-left">
-            <div className="flex items-center justify-center lg:justify-start mb-6">
+            <div className="hidden md:flex items-center justify-center lg:justify-start mb-6">
               <div 
                 className="p-2 rounded-full backdrop-blur-sm"
                 style={{ backgroundColor: 'rgba(var(--rgb-antiflash-white, 235, 235, 235), 0.1)'}}
@@ -70,7 +70,7 @@ export default function HeroSection() {
                 Captation vidéo/photo aérienne par drone
               </span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-4 sm:mb-6 tracking-tight leading-tight">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4 sm:mb-6 tracking-tight leading-tight">
               Vos vidéos et photos aériennes par drone <br /> dans le Nord et alentours
             </h1>
             
@@ -100,14 +100,14 @@ export default function HeroSection() {
             <div className="flex flex-row sm:flex-row gap-4 justify-center lg:justify-start">
               <a 
                 href="tel:+33745593516" 
-                className="relative inline-flex items-center justify-center bg-[var(--pumpkin)] text-white px-6 py-3 rounded-full font-bold hover:shadow-lg hover:shadow-[var(--pumpkin)]/25 hover:translate-y-[-2px] transition-all duration-300 overflow-hidden group w-auto max-w-[240px] mx-auto sm:mx-0"
+                className="relative inline-flex items-center justify-center bg-[var(--pumpkin)] text-white px-5 py-2 sm:px-6 sm:py-3 rounded-full font-bold hover:shadow-lg hover:shadow-[var(--pumpkin)]/25 hover:translate-y-[-2px] transition-all duration-300 overflow-hidden group w-auto max-w-[240px] mx-auto sm:mx-0"
                 aria-label="Appelez-nous pour un projet de captation par drone"
               >
                 <span className="relative z-10 flex items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 mr-3 group-hover:animate-pulse">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3 group-hover:animate-pulse">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25Z" />
                   </svg>
-                  <span className="text-lg font-bold">07 45 59 35 16</span>
+                  <span className="text-base sm:text-lg font-bold">07 45 59 35 16</span>
                 </span>
                 <div 
                   className="absolute inset-0 h-full w-full scale-0 rounded-full transition-all duration-300 group-hover:scale-100"
@@ -117,15 +117,15 @@ export default function HeroSection() {
               
               <Link 
                 href="#contact" 
-                className="relative inline-flex items-center justify-center border border-[var(--antiflash-white)] text-[var(--antiflash-white)] px-6 py-3 rounded-full font-bold hover:bg-[var(--antiflash-white)]/10 hover:translate-y-[-2px] transition-all duration-300 overflow-hidden group w-auto max-w-[240px] mx-auto sm:mx-0"
+                className="relative inline-flex items-center justify-center border border-[var(--antiflash-white)] text-[var(--antiflash-white)] px-5 py-2 sm:px-6 sm:py-3 rounded-full font-bold hover:bg-[var(--antiflash-white)]/10 hover:translate-y-[-2px] transition-all duration-300 overflow-hidden group w-auto max-w-[240px] mx-auto sm:mx-0"
                 aria-label="Demander un devis gratuit pour un projet de captation par drone"
               >
                 <span className="relative z-10 flex items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 mr-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 sm:w-5 sm:h-5 mr-1 sm:mr-2">
                     <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
                     <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
                   </svg>
-                  Devis gratuit
+                  <span className="text-sm sm:text-base">Devis gratuit</span>
                 </span>
               </Link>
             </div>
