@@ -32,7 +32,7 @@ export default function HeroSection() {
 
   return (
     <section 
-      className="relative min-h-screen overflow-hidden pt-16"
+      className="relative h-screen pt-[110px] overflow-hidden"
       style={{
         background: 'var(--polynesian-blue)' 
       }}
@@ -47,7 +47,7 @@ export default function HeroSection() {
         style={{ background: 'linear-gradient(to top, rgba(var(--rgb-polynesian-blue, 0, 78, 152), 0.5) 0%, transparent 70%)'}}
       ></div>
       
-      <div className="container mx-auto px-4 sm:px-6 h-[calc(100vh-5rem)] flex items-center">
+      <div className="container mx-auto px-4 sm:px-6 h-full flex items-center">
         <div className="flex flex-col lg:flex-row items-center justify-between w-full">
           {/* Text Content */}
           <div className="w-full lg:w-1/2 text-[var(--antiflash-white)] z-10 text-center lg:text-left">
@@ -97,32 +97,33 @@ export default function HeroSection() {
             </div>
             
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Link 
-                href="#services" 
-                className="relative inline-flex items-center bg-[var(--antiflash-white)] text-[var(--theme-accent-primary)] px-6 py-3 rounded-full font-bold hover:shadow-lg hover:shadow-[var(--theme-accent-secondary)]/25 hover:translate-y-[-2px] transition-all duration-300 overflow-hidden group"
-                aria-label="Découvrir nos services de vidéo et photo par drone"
+            <div className="flex flex-row sm:flex-row gap-4 justify-center lg:justify-start">
+              <a 
+                href="tel:+33745593516" 
+                className="relative inline-flex items-center justify-center bg-[var(--pumpkin)] text-white px-6 py-3 rounded-full font-bold hover:shadow-lg hover:shadow-[var(--pumpkin)]/25 hover:translate-y-[-2px] transition-all duration-300 overflow-hidden group w-auto max-w-[240px] mx-auto sm:mx-0"
+                aria-label="Appelez-nous pour un projet de captation par drone"
               >
                 <span className="relative z-10 flex items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 mr-2 group-hover:animate-pulse">
-                    <path d="M4.5 4.5a3 3 0 00-3 3v9a3 3 0 003 3h8.25a3 3 0 003-3v-9a3 3 0 00-3-3H4.5zM19.94 18.75l-2.69-2.69V7.94l2.69-2.69c.944-.945 2.56-.276 2.56 1.06v11.38c0 1.336-1.616 2.005-2.56 1.06z" />
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 mr-3 group-hover:animate-pulse">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25Z" />
                   </svg>
-                  Nos prestations photo et vidéo
+                  <span className="text-lg font-bold">07 45 59 35 16</span>
                 </span>
                 <div 
                   className="absolute inset-0 h-full w-full scale-0 rounded-full transition-all duration-300 group-hover:scale-100"
-                  style={{ backgroundColor: 'rgba(var(--rgb-antiflash-white, 235, 235, 235), 0.1)' }}
+                  style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)' }}
                 ></div>
-              </Link>
+              </a>
               
               <Link 
                 href="#contact" 
-                className="relative inline-flex items-center border border-[var(--antiflash-white)] text-[var(--antiflash-white)] px-6 py-3 rounded-full font-bold hover:bg-[var(--antiflash-white)]/10 hover:translate-y-[-2px] transition-all duration-300 overflow-hidden group"
+                className="relative inline-flex items-center justify-center border border-[var(--antiflash-white)] text-[var(--antiflash-white)] px-6 py-3 rounded-full font-bold hover:bg-[var(--antiflash-white)]/10 hover:translate-y-[-2px] transition-all duration-300 overflow-hidden group w-auto max-w-[240px] mx-auto sm:mx-0"
                 aria-label="Demander un devis gratuit pour un projet de captation par drone"
               >
                 <span className="relative z-10 flex items-center">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 mr-2">
-                    <path fillRule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" clipRule="evenodd" />
+                    <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+                    <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
                   </svg>
                   Devis gratuit
                 </span>

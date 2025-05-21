@@ -68,8 +68,8 @@ export default function Footer() {
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 mr-2 text-[var(--silver)]">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
                 </svg>
-                <a href="tel:+33600000000" className="text-[var(--antiflash-white)] hover:text-[var(--pumpkin)] transition-colors">
-                  +33 6 00 00 00 00
+                <a href="tel:+33745593516" className="text-[var(--antiflash-white)] hover:text-[var(--pumpkin)] transition-colors">
+                  +33 7 45 59 35 16
                 </a>
               </p>
             </address>
@@ -78,7 +78,7 @@ export default function Footer() {
         
         <div className="border-t border-[var(--antiflash-white)]/20 mt-8 pt-6 text-sm">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-[var(--antiflash-white)]/80">SIRET: 00000000000000 - Drone Nord © {new Date().getFullYear()}</p>
+            <p className="text-[var(--antiflash-white)]/80">SIRET: 92529525500010 - Drone Nord © {new Date().getFullYear()}</p>
             <div className="text-center mt-3 md:mt-0 text-xs text-[var(--antiflash-white)]/60">
               <p>&copy; {new Date().getFullYear()} Drone Nord. Tous droits réservés.</p>
               <p className="mt-1">

@@ -89,7 +89,7 @@ export default function Header({ children }: HeaderProps) {
           </button>
           
           <a 
-            href="tel:+33600000000" 
+            href="tel:+33745593516" 
             className="bg-[var(--polynesian-blue)] text-[var(--antiflash-white)] px-5 py-2.5 rounded-full hover:bg-[var(--pumpkin)] hover:text-[var(--antiflash-white)] hover:shadow-lg hover:translate-y-[-2px] transition-all flex items-center gap-2 text-sm font-semibold tracking-wide"
           >
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">

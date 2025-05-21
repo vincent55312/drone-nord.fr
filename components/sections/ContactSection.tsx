@@ -113,10 +113,10 @@ export default function ContactSection() {
                 itemScope 
                 itemType="https://schema.org/CommunicateAction"
               >
-                <meta itemProp="name" content="Formulaire de contact Drone Nord" />
+                <meta itemProp="name" content="Vincent Vuylsteker - Drone Nord" />
                 <input type="hidden" name="access_key" value="bc35668d-34eb-4e7b-a512-1f25bd30c9aa" />
                 <input type="hidden" name="subject" value="Nouveau message depuis Drone Nord" />
-                <input type="hidden" name="from_name" value="Drone Nord" />
+                <input type="hidden" name="from_name" value="Vincent Vuylsteker - Drone Nord" />
                 <input type="checkbox" name="botcheck" style={{ display: 'none' }} />
                 
                 <style jsx>{`
@@ -224,6 +224,7 @@ export default function ContactSection() {
           itemScope
           itemType="https://schema.org/Organization"
         >
+          <meta itemProp="name" content="Vincent Vuylsteker - Drone Nord" />
           <div className="bg-white rounded-xl shadow-lg p-6 border border-[var(--silver)]/10 relative overflow-hidden">
             {/* Accent element */}
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[var(--pumpkin)] to-[var(--bice-blue)]"></div>
@@ -264,11 +265,11 @@ export default function ContactSection() {
                 <div>
                   <h4 className="font-medium text-[var(--polynesian-blue)]">Téléphone</h4>
                   <a 
-                    href="tel:+33600000000" 
+                    href="tel:+33745593516" 
                     className="text-[var(--bice-blue)] hover:text-[var(--pumpkin)] transition-colors"
                     itemProp="telephone"
                   >
-                    +33 6 00 00 00 00
+                    +33 7 45 59 35 16
                   </a>
                 </div>
               </div>
@@ -304,7 +305,7 @@ export default function ContactSection() {
                   Nous intervenons pour tous vos projets de captation vidéo par drone dans le Nord et le Nord-Pas-de-Calais.
                 </p>
                 <a 
-                  href="tel:+33600000000" 
+                  href="tel:+33745593516" 
                   className="inline-flex items-center gap-2 bg-[var(--pumpkin)] py-2 px-4 rounded-lg text-white font-semibold hover:bg-[var(--pumpkin)]/90 transition-all hover:shadow-md hover:translate-y-[-2px]"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">

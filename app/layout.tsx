@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
+import ClientCookieBanner from "@/components/layout/ClientCookieBanner";
 // Ces packages doivent être installés avant utilisation
 // import { Analytics } from '@vercel/analytics/react';
 // import { CookiesProvider } from 'react-cookie';
+
+// Suppression de l'import dynamique qui cause l'erreur
+// const CookieBanner = dynamic(() => import('@/components/ui/CookieBanner'), { ssr: false });
 
 const roboto = Roboto({
   variable: "--font-roboto",
@@ -82,16 +86,17 @@ export default function RootLayout({
             {children}
             {/* <Analytics /> */}
           </div>
+          <ClientCookieBanner />
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
                 "@context": "https://schema.org",
                 "@type": "LocalBusiness",
-                "name": "Drone Nord",
+                "name": "Vincent Vuylsteker - Drone Nord",
                 "image": "https://www.drone-nord.fr/og-image.png",
                 "url": "https://www.drone-nord.fr",
-                "telephone": "+33700000000",
+                "telephone": "+33745593516",
                 "address": {
                   "@type": "PostalAddress",
                   "streetAddress": "1 rue du Drone",

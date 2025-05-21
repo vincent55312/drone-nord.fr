@@ -161,7 +161,7 @@ export default function ServicesSection() {
               >
                 <meta itemProp="priceCurrency" content="EUR" />
                 <meta itemProp="availability" content="https://schema.org/InStock" />
-                <meta itemProp="url" content={`https://www.drone-nord.fr/services#${service.title.toLowerCase().replace(/\s+/g, '-')}`} />
+                <meta itemProp="url" content={`https://www.drone-nord.fr/${service.title.toLowerCase().replace(/\s+/g, '-')}`} />
               </div>
             </div>
           ))}

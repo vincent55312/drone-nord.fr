@@ -1,15 +1,22 @@
 [
+
     {
       "slug": "location-drone-fpv",
-      "service": "Location FPV",
+      "service": "Session d'essai de drone avec masque VR",
       "description": "Louez un drone FPV pour vos tournages dynamiques, clips musicaux ou essais personnels. Une immersion totale pour des images à couper le souffle.",
       "detailedDescription": "Notre service de location inclut un drone FPV de dernière génération, équipé d'une caméra haute définition stabilisée, des batteries supplémentaires et une assistance technique. Idéal pour les créateurs de contenu souhaitant ajouter une dimension cinématique unique à leurs projets."
     },
     {
       "slug": "inspection-visuelle-drone",
-      "service": "Inspection visuelle",
+      "service": "Inspection visuelle aérienne",
       "description": "Réalisez des inspections visuelles rapides et sécurisées de zones difficiles d'accès comme les toitures ou façades grâce à des prises de vue en haute définition.",
       "detailedDescription": "Service complet d'inspection comprenant un rapport détaillé avec photos annotées, vidéos 4K et recommandations d'experts. Économisez jusqu'à 70% sur les coûts d'échafaudage tout en garantissant la sécurité de votre personnel et une analyse précise des structures."
+    },
+    {
+      "slug": "video-immobilier-drone",
+      "service": "Vidéo pour bien immobilier",
+      "description": "Valorisez vos biens avec des vidéos aériennes immersives qui offrent une vue d'ensemble percutante pour les annonces immobilières.",
+      "detailedDescription": "Package complet incluant des vues aériennes du bien et de son environnement, des plans intérieurs fluides en FPV, et un montage professionnel optimisé pour les plateformes immobilières. Nos statistiques montrent une augmentation de 40% des visites pour les annonces avec vidéos aériennes."
     },
     {
       "slug": "video-mariage-drone",
@@ -17,12 +24,7 @@
       "description": "Ajoutez une touche unique à votre mariage avec des images aériennes captivantes. Idéal pour des souvenirs grandioses et cinématographiques.",
       "detailedDescription": "Notre forfait mariage comprend des prises de vue aériennes de la cérémonie, des lieux de réception et des moments clés. Nous travaillons en coordination avec votre photographe pour capturer des angles complémentaires et créer un film de mariage véritablement immersif et émotionnel."
     },
-    {
-      "slug": "video-immobilier-drone",
-      "service": "Vidéo immobilière",
-      "description": "Valorisez vos biens avec des vidéos aériennes immersives qui offrent une vue d'ensemble percutante pour les annonces immobilières.",
-      "detailedDescription": "Package complet incluant des vues aériennes du bien et de son environnement, des plans intérieurs fluides en FPV, et un montage professionnel optimisé pour les plateformes immobilières. Nos statistiques montrent une augmentation de 40% des visites pour les annonces avec vidéos aériennes."
-    },
+
     {
       "slug": "essai-pilotage-drone-fpv",
       "service": "Essai pilotage FPV",
@@ -67,7 +69,7 @@
     },
     {
       "slug": "video-sportive-drone",
-      "service": "Vidéo sportive",
+      "service": "Vidéo sportive aérienne",
       "description": "Capturez des scènes sportives en mouvement avec un drone FPV pour un rendu fluide, immersif et spectaculaire.",
       "detailedDescription": "Captation haute vitesse de vos performances sportives avec notre drone FPV capable de suivre des mouvements rapides (VTT, ski, surf, moto). Utilisation de ralentis, transitions dynamiques et montage au rythme de l'action pour créer un film sportif professionnel mettant en valeur votre technique et votre style."
     },
@@ -79,19 +81,19 @@
     },
     {
       "slug": "video-youtube-drone",
-      "service": "Contenu YouTube",
+      "service": "Contenu YouTube aérien",
       "description": "Améliorez vos vidéos YouTube avec des plans aériens dynamiques. Idéal pour les vlogs, reviews de lieux ou storytelling visuel.",
       "detailedDescription": "Production de contenu YouTube professionnel avec une combinaison de plans au sol et aériens, transitions personnalisées, optimisation SEO des métadonnées, miniatures accrocheuses et stratégie de contenu pour développer votre chaîne. Nos clients constatent une augmentation moyenne de 35% du temps de visionnage."
     },
     {
       "slug": "prise-de-vue-lieux-naturels",
-      "service": "Prise de vue nature",
+      "service": "Prise de vue naturelle aérienne",
       "description": "Mettez en valeur les paysages, parcs, plages ou forêts avec des vidéos aériennes immersives pour le tourisme ou la promotion locale.",
       "detailedDescription": "Captation de paysages naturels à différentes heures (lever/coucher de soleil) avec des mouvements de caméra fluides et cinématiques. Utilisation de techniques time-lapse aériennes et de vols à basse altitude pour révéler la beauté cachée des lieux. Idéal pour les offices de tourisme et la promotion territoriale."
     },
     {
       "slug": "video-airbnb-location-drone",
-      "service": "Vidéo location",
+      "service": "Vidéo pour location Airbnb",
       "description": "Améliorez la visibilité de votre Airbnb ou location saisonnière avec une présentation vidéo aérienne professionnelle.",
       "detailedDescription": "Présentation complète de votre bien locatif incluant vues aériennes des extérieurs, visite virtuelle fluide des intérieurs en FPV, mise en valeur des équipements et des points forts. Les statistiques Airbnb montrent que les annonces avec vidéos professionnelles obtiennent 45% de réservations supplémentaires."
     },
@@ -103,7 +105,7 @@
     },
     {
       "slug": "presentation-entreprise-startup-drone",
-      "service": "Présentation startup",
+      "service": "Présentation startup aérienne",
       "description": "Présentez votre startup ou produit avec un angle dynamique et innovant grâce à une vidéo mêlant plans sol et plans drone.",
       "detailedDescription": "Vidéo de pitch complète pour investisseurs et clients incluant présentation du problème, de votre solution unique, démonstration du produit, témoignages clients et vision d'avenir. Utilisation de techniques narratives modernes et d'infographies animées pour expliquer clairement votre proposition de valeur."
     },
