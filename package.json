@@ -10,7 +10,7 @@
     "generate-sitemap": "node scripts/generate-sitemap.js"
   },
   "dependencies": {
-    "framer-motion": "^12.12.1",
+    "framer-motion": "^12.12.2",
     "leaflet": "^1.9.4",
     "next": "15.3.2",
     "react": "^19.0.0",

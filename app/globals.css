@@ -4,11 +4,12 @@
   /* Existing variables will be updated/removed below */
 
   /* New Color Palette */
-  --polynesian-blue: #004e98;
+  --polynesian-blue: #003769;
   --bice-blue: #3a6ea5;
   --antiflash-white: #ebebeb;
   --silver: #c0c0c0;
   --pumpkin: #ff6700;
+  --pumpkin-light: #ff8d42;
 
   /* RGB versions for use with opacity */
   --rgb-polynesian-blue: 0, 78, 152;

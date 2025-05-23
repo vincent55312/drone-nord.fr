@@ -19,7 +19,7 @@ export default function Home() {
         <div className="relative h-48 md:h-64 lg:h-80 overflow-hidden">
           <div className="absolute inset-0 w-full h-full bg-[var(--polynesian-blue)]">
             <Image 
-              src="/maison2.webp"
+              src="/panorama2.webp"
               alt="Captation aérienne professionnelle par drone dans le Nord"
               fill
               className="object-cover opacity-20"
