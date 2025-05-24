@@ -1,0 +1,154 @@
+[
+
+    {
+      "slug": "location-drone-fpv",
+      "service": "Session d'essai de drone avec masque VR",
+      "description": "Louez un drone FPV pour vos tournages dynamiques, clips musicaux ou essais personnels. Une immersion totale pour des images à couper le souffle.",
+      "detailedDescription": "Notre service de location inclut un drone FPV de dernière génération, équipé d'une caméra haute définition stabilisée, des batteries supplémentaires et une assistance technique. Idéal pour les créateurs de contenu souhaitant ajouter une dimension cinématique unique à leurs projets."
+    },
+    {
+      "slug": "inspection-visuelle-drone",
+      "service": "Inspection visuelle aérienne",
+      "description": "Réalisez des inspections visuelles rapides et sécurisées de zones difficiles d'accès comme les toitures ou façades grâce à des prises de vue en haute définition.",
+      "detailedDescription": "Service complet d'inspection comprenant un rapport détaillé avec photos annotées, vidéos 4K et recommandations d'experts. Économisez jusqu'à 70% sur les coûts d'échafaudage tout en garantissant la sécurité de votre personnel et une analyse précise des structures."
+    },
+    {
+      "slug": "video-immobilier-drone",
+      "service": "Vidéo pour bien immobilier",
+      "description": "Valorisez vos biens avec des vidéos aériennes immersives qui offrent une vue d'ensemble percutante pour les annonces immobilières.",
+      "detailedDescription": "Package complet incluant des vues aériennes du bien et de son environnement, des plans intérieurs fluides en FPV, et un montage professionnel optimisé pour les plateformes immobilières. Nos statistiques montrent une augmentation de 40% des visites pour les annonces avec vidéos aériennes."
+    },
+    {
+      "slug": "video-mariage-drone",
+      "service": "Vidéo de mariage",
+      "description": "Ajoutez une touche unique à votre mariage avec des images aériennes captivantes. Idéal pour des souvenirs grandioses et cinématographiques.",
+      "detailedDescription": "Notre forfait mariage comprend des prises de vue aériennes de la cérémonie, des lieux de réception et des moments clés. Nous travaillons en coordination avec votre photographe pour capturer des angles complémentaires et créer un film de mariage véritablement immersif et émotionnel."
+    },
+
+    {
+      "slug": "essai-pilotage-drone-fpv",
+      "service": "Essai pilotage FPV",
+      "description": "Testez le pilotage d'un drone FPV en immersion avec accompagnement personnalisé. Idéal pour les curieux et passionnés de sensations aériennes.",
+      "detailedDescription": "Session de 2 heures comprenant une initiation théorique, des exercices pratiques sur simulateur, puis un véritable vol en immersion avec notre système de double commande. Vous repartirez avec l'enregistrement de votre expérience et les connaissances de base pour poursuivre cette passion."
+    },
+    {
+      "slug": "clip-musical-drone",
+      "service": "Clip musical",
+      "description": "Réalisez un clip percutant et original avec des plans aériens dynamiques en FPV. Parfait pour créer une ambiance immersive et marquer les esprits.",
+      "detailedDescription": "Service de production complète incluant repérage des lieux, storyboarding, tournage multi-angles avec drone FPV et caméras au sol, montage rythmé synchronisé à votre musique et étalonnage professionnel pour un rendu cinématographique digne des grands labels."
+    },
+    {
+      "slug": "video-evenementielle-drone",
+      "service": "Captation d'événements",
+      "description": "Immortalisez vos événements (anniversaires, festivals, inaugurations) avec des prises de vue aériennes dynamiques et professionnelles.",
+      "detailedDescription": "Couverture complète de votre événement avec plusieurs drones pour ne manquer aucun moment clé. Notre équipe discrète capture l'ambiance générale, les moments forts et les réactions du public. Livraison d'un montage professionnel sous 72h pour une communication rapide sur vos réseaux."
+    },
+    {
+      "slug": "video-entreprise-drone",
+      "service": "Vidéo d'entreprise",
+      "description": "Présentez votre entreprise ou vos services avec des images aériennes impactantes. Valorisez vos locaux et vos équipes sous un nouvel angle.",
+      "detailedDescription": "Production complète de votre vidéo corporate incluant scénarisation, tournage multi-techniques (drone, steadicam, interviews), motion design avec intégration de vos données clés et montage professionnel. Un outil de communication puissant pour vos clients et partenaires."
+    },
+    {
+      "slug": "video-hotel-tourisme-drone",
+      "service": "Présentation touristique",
+      "description": "Attirez les visiteurs avec une vidéo immersive de votre site touristique, hôtel, camping ou domaine, mettant en valeur les paysages et installations.",
+      "detailedDescription": "Réalisation d'une vidéo promotionnelle complète mettant en valeur votre établissement à différentes heures de la journée, vos points forts et les activités proposées. Inclut des plans aériens spectaculaires, des transitions fluides et une narration visuelle engageante pour maximiser les réservations."
+    },
+    {
+      "slug": "teaser-evenementiel-drone",
+      "service": "Teaser vidéo",
+      "description": "Boostez la visibilité de vos événements à venir avec un teaser percutant incluant des plans FPV aériens modernes et énergiques.",
+      "detailedDescription": "Production d'un teaser court et impactant (30-60 secondes) avec des plans dynamiques en drone FPV, effets visuels personnalisés, sound design immersif et montage rythmé. Format optimisé pour tous les canaux de diffusion et conçu pour générer de l'engagement et des partages."
+    },
+    {
+      "slug": "video-reseaux-sociaux-drone",
+      "service": "Vidéo réseaux sociaux",
+      "description": "Créez du contenu viral et esthétique pour vos réseaux sociaux avec des séquences courtes, dynamiques et parfaitement cadrées.",
+      "detailedDescription": "Pack de contenu mensuel comprenant 5 à 10 vidéos courtes optimisées pour chaque plateforme (Instagram, TikTok, LinkedIn), avec formats verticaux et horizontaux, sous-titres intégrés et call-to-action personnalisés. Stratégie de contenu incluse pour maximiser votre portée organique."
+    },
+    {
+      "slug": "video-sportive-drone",
+      "service": "Vidéo sportive aérienne",
+      "description": "Capturez des scènes sportives en mouvement avec un drone FPV pour un rendu fluide, immersif et spectaculaire.",
+      "detailedDescription": "Captation haute vitesse de vos performances sportives avec notre drone FPV capable de suivre des mouvements rapides (VTT, ski, surf, moto). Utilisation de ralentis, transitions dynamiques et montage au rythme de l'action pour créer un film sportif professionnel mettant en valeur votre technique et votre style."
+    },
+    {
+      "slug": "mise-en-valeur-commerce-drone",
+      "service": "Vidéo commerciale",
+      "description": "Faites découvrir votre établissement sous un nouvel angle avec des vidéos aériennes modernes, idéales pour vos supports web ou réseaux.",
+      "detailedDescription": "Présentation complète de votre commerce avec des plans extérieurs aériens, des travellings intérieurs en FPV, mise en valeur de vos produits/plats et de l'ambiance unique de votre établissement. Inclut des interviews clients et une narration visuelle guidant le spectateur comme un véritable visiteur."
+    },
+    {
+      "slug": "video-youtube-drone",
+      "service": "Contenu YouTube aérien",
+      "description": "Améliorez vos vidéos YouTube avec des plans aériens dynamiques. Idéal pour les vlogs, reviews de lieux ou storytelling visuel.",
+      "detailedDescription": "Production de contenu YouTube professionnel avec une combinaison de plans au sol et aériens, transitions personnalisées, optimisation SEO des métadonnées, miniatures accrocheuses et stratégie de contenu pour développer votre chaîne. Nos clients constatent une augmentation moyenne de 35% du temps de visionnage."
+    },
+    {
+      "slug": "prise-de-vue-lieux-naturels",
+      "service": "Prise de vue naturelle aérienne",
+      "description": "Mettez en valeur les paysages, parcs, plages ou forêts avec des vidéos aériennes immersives pour le tourisme ou la promotion locale.",
+      "detailedDescription": "Captation de paysages naturels à différentes heures (lever/coucher de soleil) avec des mouvements de caméra fluides et cinématiques. Utilisation de techniques time-lapse aériennes et de vols à basse altitude pour révéler la beauté cachée des lieux. Idéal pour les offices de tourisme et la promotion territoriale."
+    },
+    {
+      "slug": "video-airbnb-location-drone",
+      "service": "Vidéo pour location Airbnb",
+      "description": "Améliorez la visibilité de votre Airbnb ou location saisonnière avec une présentation vidéo aérienne professionnelle.",
+      "detailedDescription": "Présentation complète de votre bien locatif incluant vues aériennes des extérieurs, visite virtuelle fluide des intérieurs en FPV, mise en valeur des équipements et des points forts. Les statistiques Airbnb montrent que les annonces avec vidéos professionnelles obtiennent 45% de réservations supplémentaires."
+    },
+    {
+      "slug": "after-movie-drone",
+      "service": "Aftermovie",
+      "description": "Créez un aftermovie original et mémorable avec des prises de vue en drone FPV, parfait pour résumer un événement marquant.",
+      "detailedDescription": "Production complète d'un aftermovie de 3-5 minutes combinant plans aériens spectaculaires, immersions FPV dans la foule, ralentis émotionnels et montage synchronisé à la musique. Livraison express possible sous 48h pour capitaliser sur l'enthousiasme post-événement et maximiser l'engagement sur vos réseaux."
+    },
+    {
+      "slug": "presentation-entreprise-startup-drone",
+      "service": "Présentation startup aérienne",
+      "description": "Présentez votre startup ou produit avec un angle dynamique et innovant grâce à une vidéo mêlant plans sol et plans drone.",
+      "detailedDescription": "Vidéo de pitch complète pour investisseurs et clients incluant présentation du problème, de votre solution unique, démonstration du produit, témoignages clients et vision d'avenir. Utilisation de techniques narratives modernes et d'infographies animées pour expliquer clairement votre proposition de valeur."
+    },
+    {
+      "slug": "reels-tiktok-drone",
+      "service": "Reels & TikTok",
+      "description": "Réalisez des vidéos tendances courtes et virales pour Instagram ou TikTok grâce à des prises de vues aériennes dynamiques.",
+      "detailedDescription": "Production de 10 vidéos courtes (15-60 secondes) optimisées pour les formats verticaux, avec transitions tendance, effets visuels populaires et synchronisation musicale parfaite. Inclut l'analyse des hashtags pertinents et des conseils de publication pour maximiser votre portée organique sur ces plateformes."
+    },
+    {
+      "slug": "video-camping-parc-loisir-drone",
+      "service": "Vidéo parc de loisirs",
+      "description": "Mettez en avant vos infrastructures touristiques avec des images immersives et attractives filmées par drone FPV.",
+      "detailedDescription": "Présentation complète de votre établissement de loisirs avec vues aériennes des installations, parcours immersifs entre les activités, mise en valeur des hébergements et des espaces naturels environnants. Montage dynamique montrant l'expérience client idéale pour donner envie aux spectateurs de réserver immédiatement."
+    },
+    {
+      "slug": "promotion-lieu-culturel-drone",
+      "service": "Vidéo patrimoine",
+      "description": "Valorisez un site culturel, château, musée ou monument avec une présentation aérienne immersive et moderne.",
+      "detailedDescription": "Mise en valeur cinématographique de votre patrimoine culturel avec des vues aériennes révélant l'architecture, des plans rapprochés des détails artistiques, et une narration historique optionnelle. Utilisation de techniques de post-production avancées pour recréer certains éléments historiques et offrir une expérience éducative immersive."
+    },
+    {
+      "slug": "plans-drones-cinema-independant",
+      "service": "Plans cinéma",
+      "description": "Ajoutez des séquences aériennes impressionnantes à votre projet de court-métrage ou long-métrage, pour un rendu professionnel.",
+      "detailedDescription": "Service de prise de vue aérienne cinématographique avec drones équipés de caméras professionnelles (jusqu'à 6K), pilotes expérimentés en tournage narratif, et possibilité de vols complexes programmés. Livraison des rushes en format RAW pour une intégration parfaite à votre workflow de post-production."
+    },
+    {
+      "slug": "experience-immersion-fpv",
+      "service": "Immersion FPV",
+      "description": "Faites vivre une expérience de vol en immersion totale, avec un casque FPV pour découvrir le monde comme un pilote de drone.",
+      "detailedDescription": "Animation événementielle unique où vos invités peuvent vivre l'expérience du vol en immersion via notre système de retransmission multi-casques. Jusqu'à 10 personnes peuvent simultanément suivre le vol en temps réel, avec possibilité d'enregistrer les réactions des participants pour créer un souvenir mémorable de cette expérience sensorielle unique."
+    },
+    {
+      "slug": "publicite-aerienne-drone",
+      "service": "Publicité aérienne",
+      "description": "Créez des vidéos promotionnelles impactantes pour votre marque, avec des prises de vue aériennes accrocheuses et dynamiques.",
+      "detailedDescription": "Production publicitaire complète depuis le concept créatif jusqu'au montage final, avec storyboard détaillé, tournage multi-techniques, effets spéciaux, sound design professionnel et étalonnage cinématique. Nos publicités aériennes génèrent en moyenne 3x plus d'engagement que les publicités traditionnelles."
+    },
+    {
+      "slug": "video-inauguration-entreprise-drone",
+      "service": "Vidéo d'inauguration",
+      "description": "Immortalisez l'ouverture de votre magasin ou entreprise avec des images aériennes festives et professionnelles.",
+      "detailedDescription": "Couverture complète de votre événement d'inauguration avec plans aériens de l'arrivée des invités, moments clés (coupure de ruban, discours), ambiance générale et interviews des participants. Montage express livré sous 24-48h pour communication immédiate sur vos réseaux et dans la presse locale."
+    }
+  ]

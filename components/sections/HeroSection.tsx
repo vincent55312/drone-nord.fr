@@ -34,7 +34,7 @@ export default function HeroSection() {
 
   return (
     <section 
-      className="relative min-h-[100svh] w-full overflow-hidden flex flex-col bg-gradient-to-br"
+      className="relative h-[100svh] w-full overflow-hidden flex items-center justify-center bg-gradient-to-br"
       style={{ 
         background: "linear-gradient(135deg, #f0f8ff 0%, #e1f0ff 100%)"
       }}
@@ -82,11 +82,8 @@ export default function HeroSection() {
       <div className="absolute top-40 left-5 w-1.5 h-1.5 rounded-full bg-[var(--polynesian-blue)] animate-ping opacity-40 block lg:hidden" style={{animationDelay: '0.7s'}}></div>
       <div className="absolute bottom-40 right-10 w-2 h-2 rounded-full bg-[var(--silver)] animate-ping opacity-30 block lg:hidden" style={{animationDelay: '1.5s'}}></div>
       
-      {/* Espace réservé pour le header sur mobile */}
-      <div className="h-24 md:hidden"></div>
-      
-      <div className="container mx-auto px-4 sm:px-6 flex-grow flex flex-col md:justify-center h-full py-4 md:py-6 relative z-10">
-        <div className="flex flex-col lg:flex-row items-center justify-center w-full gap-4 lg:gap-16 h-full md:mt-0 lg:mt-0">
+      <div className="container mx-auto px-4 sm:px-6 flex flex-col justify-center items-center w-full h-full py-4 md:py-6 relative z-10 mt-10 md:mt-0">
+        <div className="flex flex-col lg:flex-row items-center justify-center w-full gap-4 lg:gap-16 max-w-7xl">
           {/* Text Content */}
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -111,7 +108,6 @@ export default function HeroSection() {
                 />
                 <div className="flex flex-col">
                   <span className="text-[var(--polynesian-blue)] font-bold text-xl">Drone-nord<span className="text-[var(--pumpkin)]">.fr</span></span>
-                  <span className="text-[var(--bice-blue)] text-sm">Captation aérienne professionnelle</span>
                 </div>
               </div>
             </motion.div>
@@ -148,7 +144,7 @@ export default function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              <h1 className="text-[1.65rem] xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-3 sm:mb-5 tracking-tight leading-tight lg:ml-14 lg:pt-8 text-[var(--polynesian-blue)]">
+              <h1 className="text-[1.8rem] xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-3 sm:mb-5 tracking-tight leading-tight lg:ml-14 lg:pt-8 text-[var(--polynesian-blue)]">
                 <span className="inline-flex flex-col">
                   <span className="mb-1 sm:mb-2">Vos vidéos et</span>
                   <span className="mb-1 sm:mb-2">photos <span className="relative inline-block">
@@ -387,7 +383,7 @@ export default function HeroSection() {
         </div>
         
         <motion.div 
-          className="pb-0 flex flex-col items-center mt-auto mb-4 md:mt-0"
+          className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex flex-col items-center"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.4 }}

@@ -273,7 +273,7 @@ export default function ContactSection() {
                     </a>
                   </p>
                   <p className="text-[var(--bice-blue)]/70 text-xs">
-                    Réponse sous 24-48h
+                    Réponse rapide
                   </p>
                 </div>
               </div>

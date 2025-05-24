@@ -4,12 +4,22 @@ import React, { useState, useEffect } from 'react';
 import SectionWrapper from '@/components/ui/SectionWrapper';
 import { departmentGeoJSON } from '@/data/MapData';
 import dynamic from 'next/dynamic';
+import Link from 'next/link';
 
 // Composant de carte chargé dynamiquement côté client uniquement
 const MapComponent = dynamic(() => import('./map/MapComponent'), { 
   ssr: false,
   loading: () => <div className="h-full w-full bg-[var(--antiflash-white)] flex items-center justify-center">Chargement de la carte...</div>
 });
+
+// Fonction pour convertir un nom de ville en slug
+function cityNameToSlug(name: string): string {
+  return name
+    .toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '') // Supprimer les accents
+    .replace(/[^a-z0-9]+/g, '-') // Remplacer les caractères non alphanumériques par des tirets
+    .replace(/^-+|-+$/g, ''); // Supprimer les tirets en début et fin
+}
 
 export default function ZoneSection() {
   const [selectedDept, setSelectedDept] = useState<string | null>(null);
@@ -126,36 +136,41 @@ export default function ZoneSection() {
                   className="w-3 h-3 rounded-full mr-2" 
                   style={{ backgroundColor: dept.color }}
                 ></div>
-                <h3 
-                  className="text-base font-medium text-[var(--polynesian-blue)]"
+                <Link 
+                  href={`/drone/${dept.slug}`}
+                  className="text-base font-medium text-[var(--polynesian-blue)] hover:text-[var(--pumpkin)] transition-colors"
                   itemProp="name"
                 >
                   {dept.name}
-                </h3>
+                </Link>
               </div>
               
               <div className="grid grid-cols-1 xs:grid-cols-2 gap-1 text-sm">
-                {dept.mainCities.map((city) => (
-                  <div 
-                    key={`${dept.id}-${city}`} 
-                    className="flex items-center"
-                    itemScope 
-                    itemType="https://schema.org/City"
-                    itemProp="containsPlace"
-                  >
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-3 h-3 text-[var(--pumpkin)] mr-1">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
-                    </svg>
-                    <span 
-                      className="text-[var(--bice-blue)]"
-                      itemProp="name"
+                {dept.mainCities.map((city) => {
+                  const citySlug = cityNameToSlug(city);
+                  return (
+                    <div 
+                      key={`${dept.id}-${city}`} 
+                      className="flex items-center"
+                      itemScope 
+                      itemType="https://schema.org/City"
+                      itemProp="containsPlace"
                     >
-                      {city}
-                    </span>
-                    <meta itemProp="containedIn" content={dept.name} />
-                  </div>
-                ))}
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-3 h-3 text-[var(--pumpkin)] mr-1">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                      </svg>
+                      <Link 
+                        href={`/drone/${dept.slug}/${citySlug}`}
+                        className="text-[var(--bice-blue)] hover:text-[var(--pumpkin)] transition-colors hover:underline"
+                        itemProp="name"
+                      >
+                        {city}
+                      </Link>
+                      <meta itemProp="containedIn" content={dept.name} />
+                    </div>
+                  );
+                })}
               </div>
             </div>
           ))}

@@ -203,6 +203,12 @@ export default function LandingHeader() {
           animation: marquee 40s linear infinite;
           min-width: 100%;
         }
+        
+        @media (max-width: 768px) {
+          .animate-marquee {
+            animation: marquee 12s linear infinite;
+          }
+        }
       `}</style>
     </header>
   );

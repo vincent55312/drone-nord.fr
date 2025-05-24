@@ -3,6 +3,14 @@ const path = require('path');
 const prettier = require('prettier');
 const services = require('../data/services.json');
 
+// Définition des départements supportés
+const ALLOWED_DEPARTMENTS = [
+  { code: "59", name: "Nord", slug: "nord" },
+  { code: "62", name: "Pas-de-Calais", slug: "pas-de-calais" },
+  { code: "80", name: "Somme", slug: "somme" },
+  { code: "76", name: "Seine-Maritime", slug: "seine-maritime" }
+];
+
 // Fonction pour obtenir la date de dernière modification réelle d'un fichier
 function getLastModifiedDate(filePath) {
   try {
@@ -77,9 +85,52 @@ async function generateSitemap() {
     changeFrequency: 'monthly',
     priority: 0.8,
   }));
+  
+  // Date de dernière modification pour les pages de départements et villes
+  const departmentPageTemplatePath = path.join(pagesDir, 'drone', '[departement]', 'page.tsx');
+  const departmentLastModified = getLastModifiedDate(departmentPageTemplatePath);
+  
+  const cityPageTemplatePath = path.join(pagesDir, 'drone', '[departement]', '[city]', 'page.tsx');
+  const cityLastModified = getLastModifiedDate(cityPageTemplatePath);
+  
+  // Générer les entrées pour les pages de départements
+  const departmentPages = ALLOWED_DEPARTMENTS.map(dept => ({
+    url: `https://www.drone-nord.fr/drone/${dept.slug}`,
+    lastModified: departmentLastModified,
+    changeFrequency: 'monthly',
+    priority: 0.8,
+  }));
+  
+  // Générer les entrées pour les pages de villes
+  let cityPages = [];
+  try {
+    const citiesFilePath = path.join(process.cwd(), 'public', 'french-cities.json');
+    const citiesContent = fs.readFileSync(citiesFilePath, 'utf8');
+    const citiesData = JSON.parse(citiesContent);
+    
+    // Pour chaque département supporté, récupérer les villes correspondantes
+    for (const dept of ALLOWED_DEPARTMENTS) {
+      // Vérifier si le département existe dans les données
+      if (citiesData[dept.code] && citiesData[dept.code].cities) {
+        const departmentCities = citiesData[dept.code].cities;
+        
+        // Ajouter chaque ville au sitemap
+        const deptCityPages = departmentCities.map(city => ({
+          url: `https://www.drone-nord.fr/drone/${dept.slug}/${city.slug}`,
+          lastModified: cityLastModified,
+          changeFrequency: 'monthly',
+          priority: 0.7,
+        }));
+        
+        cityPages = [...cityPages, ...deptCityPages];
+      }
+    }
+  } catch (error) {
+    console.error('Error reading french-cities.json:', error);
+  }
 
   // Combiner toutes les pages
-  const allPages = [...staticPagesWithDates, ...servicePages];
+  const allPages = [...staticPagesWithDates, ...servicePages, ...departmentPages, ...cityPages];
 
   // Générer le XML du sitemap
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>

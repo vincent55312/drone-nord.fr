@@ -2,11 +2,19 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Footer() {
+  // Définition des départements supportés
+  const DEPARTMENTS = [
+    { code: "59", name: "Nord", slug: "nord" },
+    { code: "62", name: "Pas-de-Calais", slug: "pas-de-calais" },
+    { code: "80", name: "Somme", slug: "somme" },
+    { code: "76", name: "Seine-Maritime", slug: "seine-maritime" }
+  ];
+
   return (
     <footer className="bg-[var(--polynesian-blue)] text-[var(--antiflash-white)] py-6 sm:py-8 md:py-12 px-3 sm:px-4 md:px-6">
       <div className="container mx-auto">
-        <div className="flex flex-col md:flex-row justify-between gap-4 sm:gap-6 md:gap-8">
-          <div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 md:gap-8">
+          <div className="lg:col-span-1">
             <Link href="/" className="flex items-center mb-2 sm:mb-4 group">
               <Image
                 src="/logo.png"
@@ -87,6 +95,30 @@ export default function Footer() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                   </svg>
                   Inspection visuelle
+                </Link>
+              </li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 className="text-base sm:text-lg font-semibold mb-2 sm:mb-4 text-[var(--antiflash-white)] border-b border-[var(--antiflash-white)]/20 pb-1 sm:pb-2">Départements</h3>
+            <ul className="space-y-2 sm:space-y-3">
+              {DEPARTMENTS.map((dept) => (
+                <li key={dept.code}>
+                  <Link href={`/drone/${dept.slug}`} className="text-xs sm:text-sm text-[var(--antiflash-white)] hover:text-[var(--pumpkin)] transition-colors flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-2">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>
+                    {dept.name} ({dept.code})
+                  </Link>
+                </li>
+              ))}
+              <li>
+                <Link href="/drone" className="text-xs sm:text-sm text-[var(--pumpkin)] hover:text-[var(--pumpkin)]/80 transition-colors flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-2">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  Voir toutes les villes
                 </Link>
               </li>
             </ul>
