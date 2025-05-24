@@ -4,7 +4,7 @@ interface SectionWrapperProps {
   id: string;
   className?: string;
   children: React.ReactNode;
-  background?: 'dark' | 'light' | 'white';
+  background?: 'primary' | 'light' | 'white';
   withTopDivider?: boolean;
   withBottomDivider?: boolean;
   flipDivider?: boolean;
@@ -23,14 +23,14 @@ export default function SectionWrapper({
 }: SectionWrapperProps) {
   
   const bgColor = {
-    dark: 'bg-[var(--polynesian-blue)] text-[var(--antiflash-white)]',
-    light: 'bg-[var(--alice-blue)] text-[var(--polynesian-blue)]',
+    primary: 'bg-[#e8f3ff] text-[var(--polynesian-blue)]',
+    light: 'bg-[#f5f9ff] text-[var(--polynesian-blue)]',
     white: 'bg-white text-[var(--polynesian-blue)]'
   }[background];
 
   const dividerColor = {
-    dark: 'text-[var(--polynesian-blue)]',
-    light: 'text-[var(--alice-blue)]',
+    primary: 'text-[#e8f3ff]',
+    light: 'text-[#f5f9ff]',
     white: 'text-white'
   }[background];
 

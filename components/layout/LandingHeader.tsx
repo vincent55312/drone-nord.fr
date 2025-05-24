@@ -79,10 +79,22 @@ export default function LandingHeader() {
   return (
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 backdrop-blur-md ${
-        scrolled ? 'py-1.5 shadow-lg bg-white/90' : 'py-2.5 bg-white/70'
+        scrolled ? 'shadow-lg bg-white/90' : 'bg-white/70'
       }`}
     >
-      <div className="container mx-auto px-4 flex justify-between items-center">
+      {/* Image d'arrière-plan pour desktop et mobile */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <div className="absolute inset-0 bg-white/90 backdrop-blur-md"></div>
+        <Image 
+          src="/panorama2.webp"
+          alt="Vue panoramique par drone"
+          fill
+          className="object-cover opacity-10"
+          priority
+        />
+      </div>
+      
+      <div className="container mx-auto px-4 flex justify-between items-center py-1.5 sm:py-2.5 relative z-10">
         <Link href="/" className="flex items-center group z-50 relative">
           <div className={`relative transition-all duration-300 ${scrolled ? 'w-[55px] h-[33px] sm:w-[60px] sm:h-[36px]' : 'w-[65px] h-[39px] sm:w-[70px] sm:h-[42px]'}`}>
             <Image
@@ -144,10 +156,10 @@ export default function LandingHeader() {
       </div>
       
       {/* Bande défilante de services - visible sur tous les appareils */}
-      <div className="bg-[var(--polynesian-blue)]/5 overflow-hidden h-9 w-full py-2">
+      <div className="bg-white/70 backdrop-blur-md overflow-hidden h-9 w-full flex items-center border-t border-[var(--polynesian-blue)]/5 relative z-10">
         <div className="animate-marquee flex">
           {/* Première moitié qui remplit l'écran dès le départ */}
-          <div className="flex">
+          <div className="flex items-center">
             {Array(2).fill(0).map((_, dupeIndex) => (
               services.map((service, index) => (
                 <Link 
@@ -162,7 +174,7 @@ export default function LandingHeader() {
           </div>
           
           {/* Seconde moitié pour la continuité de l'animation */}
-          <div className="flex">
+          <div className="flex items-center">
             {Array(2).fill(0).map((_, dupeIndex) => (
               services.map((service, index) => (
                 <Link 

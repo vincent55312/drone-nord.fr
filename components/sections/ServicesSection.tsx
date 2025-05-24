@@ -98,7 +98,7 @@ export default function ServicesSection() {
   return (
     <SectionWrapper
       id="services"
-      background="light"
+      background="primary"
       withTopDivider
       withBottomDivider
       icon={serviceIcon}
@@ -112,8 +112,8 @@ export default function ServicesSection() {
         <meta itemProp="provider" content="Drone Nord" />
         <meta itemProp="areaServed" content="Nord et Nord-Pas-de-Calais" />
         <div className="flex flex-col items-center justify-center text-center mb-6 sm:mb-8 md:mb-10 animate-fade-in">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-3 text-white" itemProp="name">Nos prestations de captation par drone</h2>
-          <p className="text-base max-w-3xl mx-auto text-white" itemProp="description">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-3 text-[var(--polynesian-blue)]" itemProp="name">Nos prestations de captation par drone</h2>
+          <p className="text-base max-w-3xl mx-auto text-[var(--bice-blue)]" itemProp="description">
             Nous proposons des services professionnels de captation aérienne par drone pour répondre à tous vos besoins dans le Nord et Nord-Pas-de-Calais.
             Vidéos 4K Ultra HD, photos haute résolution et montages soignés pour valoriser vos projets.
           </p>
